@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteCond %{HTTPS} off
+RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www.theresnoplacelikethisplace.com [NC]
-RewriteRule (.*) https://theresnoplacelikethisplace.com [R,L]
+RewriteRule (.*) https://theresnoplacelikethisplace.com/$1 [R,L]
