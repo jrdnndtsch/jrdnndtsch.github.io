@@ -275,14 +275,20 @@ header img {
   display: block;
 }
 
-header img:nth-of-type(1) {
+.logo-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-grid img {
   width: 180px;
-  margin: 45px auto 0;
+  margin: 45px 0 0;
   z-index: 10;
   position: relative;
 }
 
-header img:nth-of-type(2) {
+header .title {
   width: 100%;
   max-width: 480px;
   margin: 40px auto 0;
@@ -290,7 +296,7 @@ header img:nth-of-type(2) {
   position: relative;
 }
 
-header img:nth-of-type(3) {
+header .building {
   position: relative;
   top: -200px;
   left: 50%;
@@ -344,6 +350,9 @@ section.about {
 .about-grid >div:last-of-type {
   width: 40%;
   text-align: right;
+}
+.about-grid >div:last-of-type img:first-of-type {
+  margin-bottom: 20px;
 }
 
 @media all and (max-width: 767px) {
