@@ -314,11 +314,17 @@ header .button {
   header {
     height: 850px;
   }
-  header img:nth-of-type(2) {
+  header .logo-grid {
+    flex-direction: column;
+  }
+  header .logo-grid img {
+    margin: 10px 0 0;
+  }
+  header .title {
     width: 80%;
     max-width: 320px;
   }
-  header img:nth-of-type(3) {
+  header .building {
     width: calc(100% + 100px);
     bottom: 0;
     top: auto;
