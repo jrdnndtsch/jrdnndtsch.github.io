@@ -37,6 +37,7 @@ body {
 h2 {
   font-family: 'Gordita Bold', sans-serif;
   font-size: 35px;
+  line-height: 42px;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -519,6 +520,50 @@ section.about {
   object-position: 50% 0;
 }
 
+/* Partners */
+
+.partners {
+  background: var(--blue-sky);
+  padding: 1px 0 80px;
+}
+
+
+
+.partners .grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.partners .grid >div {
+  width: calc(20% - (80px / 5));
+  margin-right: 20px;
+  /* margin-bottom: 10px; */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.partners .grid >div:nth-of-type(4n + 5) {
+  margin-right: 0;
+}
+.partners .grid >div img {
+  width: 100%;
+  object-fit: fit;
+}
+
+@media all and (max-width: 760px) {
+  .partners .grid >div {
+    width: 50%;
+    margin-bottom:0;
+    height: 80px;
+    padding: 0 4px;
+  }
+  .partners .grid >div {
+    margin-right: 0;
+  }
+}
 /* Contact */
 .contact-grid {
   display: flex;
