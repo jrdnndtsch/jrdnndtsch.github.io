@@ -76,6 +76,11 @@ h4 {
   cursor: pointer;
 }
 
+.button-light {
+  color: var(--blue);
+  background: #fff;
+}
+
 .button-light:hover {
   color: #fff;
   background: var(--blue);
