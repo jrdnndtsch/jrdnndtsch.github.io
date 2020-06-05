@@ -277,6 +277,18 @@ header {
   overflow: hidden;
 }
 
+header.press-header {
+  background-image: url(./assets/press_header.png);
+  height: 100vh;
+}
+
+header.press-header h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-top: 35vh;
+}
+
 header img {
   display: block;
 }
@@ -383,6 +395,14 @@ section.about {
   width: 260px;
 }
 
+.about-synopsis {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 120px;
+}
+
+
+
 .about-gallery {
   background: var(--blue-sky);
   background-image: url('./assets/clouds.png');
@@ -396,10 +416,53 @@ section.about {
   padding-bottom: 140px;
 }
 
+.about-gallery-wrapper-home {
+  padding-bottom: 10px;
+}
+
 .about-gallery-wrapper .flickity-prev-next-button,
 .team-gallery-wrapper .flickity-prev-next-button {
   position: absolute;
   top: calc(100% + 70px);
+}
+
+.about-gallery video {
+  width: 100%;
+}
+
+.screenings {
+  padding: 1px 0 40px;
+  background: var(--blue-sky);
+}
+
+.screenings-grid {
+  display: flex;
+  width: 90%;
+  max-width: 680px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.screenings-grid img {
+  width: 160px;
+}
+
+.screenings-grid p {
+  color: #fff;
+}
+
+.screenings-grid h3 {
+  margin-bottom: 16px;
+}
+
+@media all and (max-width: 780px) {
+  .screenings-grid {
+    flex-direction: column;
+  }
+  .screenings-grid > div {
+    margin-bottom: 20px;
+  }
 }
 
 .team-gallery-wrapper .flickity-prev-next-button {
@@ -567,6 +630,56 @@ section.about {
   }
   .partners .grid >div {
     margin-right: 0;
+  }
+}
+
+/* Press */
+.press {
+  padding: 85px 0;
+}
+.press-grid {
+ display: flex;
+ width: 90%;
+ max-width: 1020px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+.press-grid > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% / 3);
+  padding: 0 10px;
+}
+.press-grid img {
+  width: 150px;
+  margin-bottom: 18px;
+}
+
+.press-grid h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 28px;
+}
+
+.press-grid a {
+  text-transform: uppercase;
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media all and (max-width: 900px) {
+  .press-grid {
+    flex-direction: column;
+  }
+  .press-grid > div {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 /* Contact */

@@ -132,6 +132,14 @@ $(document).ready(function() {
       }
     }
   });
+
+  $('#trailer').hover(function toggleControls() {
+      if (this.hasAttribute("controls")) {
+          this.removeAttribute("controls")
+      } else {
+          this.setAttribute("controls", "controls")
+      }
+  })
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
