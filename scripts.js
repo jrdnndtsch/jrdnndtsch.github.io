@@ -133,12 +133,20 @@ $(document).ready(function() {
     }
   });
 
-  $('#trailer').hover(function toggleControls() {
-      if (this.hasAttribute("controls")) {
-          this.removeAttribute("controls")
-      } else {
-          this.setAttribute("controls", "controls")
-      }
+  // $('#trailer').hover(function toggleControls() {
+  //     if (this.hasAttribute("controls")) {
+  //         this.removeAttribute("controls")
+  //     } else {
+  //         this.setAttribute("controls", "controls")
+  //     }
+  // })
+
+  $('#trailer').mouseenter(function(){
+    this.setAttribute("controls", "controls")
+  })
+
+  $('#trailer').mouseleave(function(){
+    this.removeAttribute("controls")
   })
   // Select all links with hashes
   $('a[href*="#"]')
