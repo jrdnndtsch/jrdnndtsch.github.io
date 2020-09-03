@@ -437,11 +437,17 @@ section.about {
 
 .screenings-grid {
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   max-width: 680px;
   margin: 0 auto;
   justify-content: space-between;
   text-align: center;
+}
+
+.screenings-grid > div {
+  width: 50%;
+  margin-top: 40px;
 }
 
 .screenings-grid img {
