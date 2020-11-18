@@ -300,8 +300,8 @@ header img {
 }
 
 .logo-grid img {
-  width: 180px;
-  margin: 45px 0 0;
+  width: 100px;
+  margin: 45px 10px 0;
   z-index: 10;
   position: relative;
 }
